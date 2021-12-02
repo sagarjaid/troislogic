@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cost Calculator</title>
+
+    <!-- style -->
+    <link rel="stylesheet" href="cost-style.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="nav">
+      <div class="navbar">
+        <div class="n1">
+          <a href="./index.html">
+            <img src="/images/logo.png" alt=" troislogic logo" width="250px"
+          /></a>
+        </div>
+        <div class="n2">
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./index.html#services">Services</a></li>
+            <li><a href="./index.html#testimonials">Testimonials</a></li>
+            <li><a href="./cost-cal.html">Cost calculator</a></li>
+            <li><a href="./index.html#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <h2>Calculate Service Cost</h2>
+
+    <div class="switch-flex">
+      <div class="switch-left">
+        <div class="bullet"></div>
+        <div class="switch-context">
+          <h3>Professional Website</h3>
+          <p>Get premium website | Get All Feature below</p>
+        </div>
+      </div>
+
+      <div class="switch-right">
+        <div class="pwcheckbox">
+          <input type="checkbox" id="pw" onclick="pwNewTotal()" />
+        </div>
+      </div>
+    </div>
+
+    <div class="switch-flex">
+      <div class="switch-left">
+        <div class="bullet"></div>
+        <div class="switch-context">
+          <h3>Multivendor System</h3>
+          <p>Allow Seller to sell with you</p>
+        </div>
+      </div>
+
+      <div class="switch-right">
+        <div class="pwcheckbox">
+          <input type="checkbox" id="ms" onclick="msNewTotal()" />
+        </div>
+      </div>
+    </div>
+
+    <div class="switch-flex">
+      <div class="switch-left">
+        <div class="bullet"></div>
+        <div class="switch-context">
+          <h3>ecommerce (CMS)</h3>
+          <p>Wodpress/ Shopify ecommerce store</p>
+        </div>
+      </div>
+
+      <div class="switch-right">
+        <div class="pwcheckbox">
+          <input type="checkbox" id="ec" onclick="ecNewTotal()" />
+        </div>
+      </div>
+    </div>
+
+    <div class="switch-flex">
+      <div class="switch-left">
+        <div class="bullet"></div>
+        <div class="switch-context">
+          <h3>Android App</h3>
+          <p>Customer App | Seller App | Delivery Boy</p>
+        </div>
+      </div>
+
+      <div class="switch-right">
+        <div class="pwcheckbox">
+          <input type="checkbox" id="app" onclick="appNewTotal()" />
+        </div>
+      </div>
+    </div>
+
+    <div class="switch-flex">
+      <div class="switch-left">
+        <div class="bullet"></div>
+        <div class="switch-context">
+          <h3>iOS App</h3>
+          <p>Customer App | Seller App | Delivery Boy</p>
+        </div>
+      </div>
+
+      <div class="switch-right">
+        <div class="pwcheckbox">
+          <input type="checkbox" id="iosapp" onclick="iosAppNewTotal()" />
+        </div>
+      </div>
+    </div>
+
+    <div class="switch-flex">
+      <div class="switch-left">
+        <div class="bullet"></div>
+        <div class="switch-context">
+          <h3>Basic Support – 1 Year</h3>
+          <p>Ticket Support System</p>
+        </div>
+      </div>
+
+      <div class="switch-right">
+        <div class="pwcheckbox">
+          <input type="checkbox" id="bsc" onclick="bscNewTotal()" />
+        </div>
+      </div>
+    </div>
+
+    <div class="switch-flex">
+      <div class="switch-left">
+        <div class="bullet"></div>
+        <div class="switch-context">
+          <h3>Dedicated Support – 1 Year</h3>
+          <p>Dedicated person/team for Support</p>
+        </div>
+      </div>
+
+      <div class="switch-right">
+        <div class="pwcheckbox">
+          <input type="checkbox" id="dds" onclick="ddsNewTotal()" />
+        </div>
+      </div>
+    </div>
+
+    <div class="calc">
+      <div class="calc-contnr">
+        <span>Total:&nbsp; ₹</span>
+        <span id="caltotal">0</span>
+      </div>
+    </div>
+
+    <div class="empty"></div>
+
+    <div class="footer">
+      <p>© 2021 Troislogic</p>
+    </div>
+
+    <script src="cost.js"></script>
+  </body>
+</html>

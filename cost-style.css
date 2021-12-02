@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+}
+
+h2 {
+  text-align: center;
+}
+
+h3 {
+  margin: 0px;
+}
+
+h3 + p {
+  font-size: 10px;
+  color: #8c8a8c;
+  margin: 05px 0px;
+}
+
+.bullet {
+  width: 05px;
+  height: 60px;
+  /* background: #bdb9a6; */
+  background: #0075ff;
+  margin: 08px;
+}
+.switch-flex {
+  margin: 20px auto;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.switch-left {
+  display: flex;
+  align-items: center;
+}
+
+/* Checkbox buttons */
+
+input[type='checkbox'] {
+  width: 30px;
+  height: 30px;
+}
+
+.calc-contnr {
+  margin: 10px 60px;
+  padding: 10px 0px;
+  background: black;
+  color: white;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.calc-contnr span {
+  font-size: 24px;
+}
+
+.empty {
+  height: 50px;
+}
